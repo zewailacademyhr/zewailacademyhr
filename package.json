@@ -1,0 +1,20 @@
+{
+  "name": "zewail-academy-hrm",
+  "version": "1.0.0",
+  "description": "نظام إدارة شؤون الموظفين - Zewail Academy",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["hrm", "crm", "arabic", "rwd", "nextjs", "express"],
+  "author": "Zewail Academy",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
